@@ -1,0 +1,43 @@
+body{
+	margin: 0px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  height: 15px;
+  width: 
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  height: 15px;
+}
+
+.footer{
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+}
+#labels {
+	display: flex;
+    justify-content:space-evenly;
+}
+#buttons{
+	height: 30px
+}
+.reset{
+	height: 30px;
+    width: 75px;
+}
