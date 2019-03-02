@@ -17,15 +17,7 @@ function calculateGrossPay(){
 var box1 = parseInt(document.getElementById('wage').value);
 var box2 = parseInt(document.getElementById('hour').value);
 var results= document.getElementById('results');
-var myResults = null;
-
-	if ( hours >= 40 ) {
-		myResults = box1*box2;
-	}else (hours > 40)
-		myResult= (box2 - 40) * (box1*1.5);
-
-	results.value = myResults;
-
+var myResult2 = null;
 
 
 //Employee 3
@@ -33,5 +25,5 @@ var myResults = null;
 var wagetext = document.getElementById('box13').value;
 var hourtext = document.getElementById('box23').value;
 var result3 = document.getElementById('result3');
-var myResults = wagetext*hourtext;
-result3.value = myResults;
+var myResult3 = null;
+result3.value = myResult3;
