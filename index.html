@@ -5,53 +5,62 @@
 	<title>Gross Pay Calc</title>
 	<link rel="stylesheet" type="text/css" href="css/gross.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 </head>
 
 <body>
 
-	<header>
-		<h1>My Gross Wage Calculator </h1>
-		<h4>Juan Ramirez</h4>
+	<header id="blacktop">
+		<div class="cal-title">
+			<h1>My Gross Wage Calculator </h1>
+		</div>
+		<div class="sec-name">
+			<h4>Juan Ramirez</h4>
+		</div>
+		
 	</header>
 <main>
-	<form >
+	<div id="showcase">
 		<section class="labels">
-			<a>Wage</a>
-			<a>Hours</a>
-			<a>Gross Total</a>
+			<p>Employee 1</p>
+			<p>Employee 2</p>
+			<p>Employee 3</p>
 		</section>
-			
 		<section class="text-box">
-		<a>Employee 1</a>
-			<input type="text" id="box1">
-			<input type="text" id="box2">
-			<input type="text" id="result" value=" " readonly=" "><br>
+			
+	<form id="FormCalculation" >
 
-			<a>Employee 2</a>
-			<input type="text" id="wage">
-			<input type="text" id="hour">
-			<input type="text" id="results" value=" " readonly=" "><br>
+		<section class="bottomboxes">
+			<div class='Employee1boxes'>
+				<input type="text" placeholder="wage" id="wage1"><br>
+				<input type="text"  placeholder="hours worked"id="hours1"><br>
+				<input type="text" id="result1" value=" $ " readonly="$"><br>
+			</div>
+			
+			<div class='Employee2boxes'>
+				<input type="text" placeholder="wage"id="wage2"><br>
+				<input type="text" placeholder="hours worked"id="hours2"><br>
+				<input type="text" id="result2" value="$ " readonly=" "><br>
+			</div>
 
-
-			<a>Employee 3</a>
-			<input type="text" id="box13">
-			<input type="text" id="box23">
-			<input type="text" id="result3" value=" " readonly=" "><br>
-		</section>	
-
-			<section class="buttons">
-				<input type="button" value="Calculate" onclick="calculateGrossPay()"/>
-				<input type="Reset">
+			<div class='Employee2boxes'>
+				<input type="text"placeholder="wage" id="wage3"><br>
+				<input type="text" placeholder="hours worked"id="hours3"><br>
+				<input type="text" id="result3" value=" $ " readonly=" "><br>
+			</div>
 			</section>
-			
-			
+		</section>
+	
 
-
-
+</section>
+	<div class="buttons">
+		<input id="left-btn" type="button" onclick="calculateGrossPay()" value="Calculate">
+		<input id="right-btn"type="button" onclick="reset()" value="Reset form"/>
+	</div>
 			
-
-			
+		
 	</form>
+</div>
 	</main>
 <footer>
 	<div class="footer">

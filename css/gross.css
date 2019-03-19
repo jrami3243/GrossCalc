@@ -1,34 +1,89 @@
+header#blacktop {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+}
+#blacktop h1 {
+    color: white;
+    margin-bottom: 0px;
+}
+
+.sec-name h4 {
+    color: white;
+    margin-bottom: 0px;
+}
 body{
 	margin: 0px;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  height: 15px;
-  width: 
+    font-family:'Baloo Chettan', cursive;
 }
 
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-  height: 15px;
+#showcase {
+  background-image: url('../images/calwall.jpg');
+  height: 80vh;
+  background-size: cover;
+  background-position: : center;
+}
+section.labels p {
+    margin-right: 65px;
+    margin-left: 15px;
 }
 
-.footer{
+section.labels {
+    color: wheat;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+section.bottomboxes {
+    display: flex;
+}
+.Employee1boxes {
+    padding-left: 20px;
+}
+.Employee2boxes {
+    padding-left: 20px;
+}
+.Employee3boxes {
+    padding-left: 20px;
+}
+
+section.text-box {
+    color: wheat;
+    display: flex;
+    justify-content: center;
+}
+input[type="button"] {
+    height: 50px;
+    width: 185px;
+    background-color: wheat;
+}
+input[type="button"] {
+    height: 50px;
+    background-color: wheat;
+    width: 185px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-family: 'Baloo Chettan', cursive;
+
+}
+
+
+.footer {
 	position: fixed;
     bottom: 0px;
     width: 100%;
     background-color: lightgrey;
     text-align: center;
+    background-color: black;
+    color: white;
 }
 #labels {
 	display: flex;
@@ -41,3 +96,54 @@ body{
 	height: 30px;
     width: 75px;
 }
+
+input#wage1 {
+    height: 30px;
+    font-size: 15px;
+}
+input#hours1 {
+    height: 30px;
+    font-size: 15px;
+}
+input#result1 {
+    height: 30px;
+    font-size: 15px;
+}
+
+
+input#wage2 {
+    height: 30px;
+    font-size: 15px;
+}
+input#hours2 {
+    height: 30px;
+    font-size: 15px;
+}
+input#result2 {
+    height: 30px;
+    font-size: 15px;
+}
+
+
+input#wage3{
+    height: 30px;
+    font-size: 15px;   
+}
+input#hours3{
+    height: 30px;
+    font-size: 15px;
+}
+input#result3{
+    height: 30px;
+    font-size: 15px;
+}
+#left-btn {
+    margin-right: 40px;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 19px;
+}
+#right-btn{
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 19px;
+}
+

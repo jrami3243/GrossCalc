@@ -1,29 +1,48 @@
 function calculateGrossPay(){
-	var pay_rate  = parseInt(document.getElementById('box1').value);
-	var hours = parseInt(document.getElementById('box2').value);
-	var result= document.getElementById('result');
-	var myResult = null;
+	var numOfWorkers = 3;
+	for(var i= 1; i <= numOfWorkers; i++) {
+
+		var hoursWorked = parseFloat(document.getElementById('hours'+ i).value);
+		var wage = parseFloat(document.getElementById('wage'+ i).value);
 
 
-	if ( hours >= 40 ) {
-		regpay=(pay_rate*40)
-		overTimePay=((pay_rate*1.5)*(hours-40))
-		myResult = (regpay+overTimePay);
+		if( hoursWorked > 40) {
+			var regTime = wage * 40;
+			var overTime = (wage*1.5) * (hoursWorked - 40);
+			var result = regTime + overTime;
 
-		document.getElementById('myResult').value;
+			document.getElementById('result' + i).value = result;
+		}else {
+			document.getElementById('result' + i).value = hoursWorked * wage;
+
+		}
+	}
 }
+
+
+function reset(){
+	document.getElementById("reset").reset();
 }
-//Employee 2
-var box1 = parseInt(document.getElementById('wage').value);
-var box2 = parseInt(document.getElementById('hour').value);
-var results= document.getElementById('results');
-var myResult2 = null;
 
 
-//Employee 3
 
-var wagetext = document.getElementById('box13').value;
-var hourtext = document.getElementById('box23').value;
-var result3 = document.getElementById('result3');
-var myResult3 = null;
-result3.value = myResult3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
